@@ -1,0 +1,18 @@
+{
+  "company": "SureBright",
+  "repo": "policy-graph",
+  "metrics": [
+    "surebright_coverage",
+    "spells_risk",
+    "painful_precision",
+    "lowest_latency"
+  ],
+  "failure_modes": [
+    "surebright_drift",
+    "spells_gap",
+    "painful_misroute",
+    "lowest_blindspot"
+  ],
+  "minimum_cases": 144,
+  "requires_evidence_markers": true
+}
