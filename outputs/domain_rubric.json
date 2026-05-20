@@ -1,0 +1,66 @@
+{
+  "repo": "policy-graph",
+  "company": "SureBright",
+  "rubric_axes": [
+    {
+      "axis": "surebright_coverage",
+      "failures": [
+        "surebright_drift"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "spells_risk",
+      "failures": [
+        "spells_gap"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "painful_precision",
+      "failures": [
+        "painful_misroute"
+      ],
+      "evidence_required": true
+    },
+    {
+      "axis": "lowest_latency",
+      "failures": [
+        "lowest_blindspot"
+      ],
+      "evidence_required": true
+    }
+  ],
+  "archetypes": [
+    {
+      "name": "surebright evidence replay",
+      "trigger": "surebright signal changes while spells context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "spells boundary probe",
+      "trigger": "spells handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "painful regression harness",
+      "trigger": "painful behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "lowest operator packet",
+      "trigger": "lowest output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
+  "sources_used": [
+    "https://www.ycombinator.com/companies/surebright",
+    "https://www.ycombinator.com/companies/surebright/jobs/HLJI44H-staff-ai-engineer-agentic-systems",
+    "https://betakit.com/surebright-raises-3-2-million-cad-to-reinvent-retail-insurance/",
+    "https://www.insurancebusinessmag.com/ca/news/technology/insurtech-surebright-secures-3-2-million-preseed-round-418620.aspx",
+    "https://getlatka.com/companies/surebright.com",
+    "https://theorg.com/org/surebright/org-chart/manish-chauhan",
+    "https://nocap.blog/experience/surebright/",
+    "https://www.surebright.com/faq/surebright-integration-process"
+  ]
+}

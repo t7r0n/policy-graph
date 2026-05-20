@@ -1,7 +1,5 @@
 scenario,cases,blocks,reviews,mean_severity,mean_score,top_evidence_id,recommended_action
-lowest policy boundary,24,2,3,1.708,0.2802,ev_0033,block release until replay is understood
-painful failure replay,24,2,4,3.333,0.5327,ev_0110,block release until replay is understood
-spells gap,24,3,2,3.333,0.5285,ev_0143,block release until replay is understood
-spells reviewer handoff,24,2,4,2.583,0.3995,ev_0121,block release until replay is understood
-surebright drift,24,2,3,2.5,0.3828,ev_0088,block release until replay is understood
-surebright evidence recall,24,3,3,1.875,0.2996,ev_0132,block release until replay is understood
+lowest operator packet,36,4,5,2.556,0.4039,ev_0099,accept only if decision claims cite fixture evidence
+painful regression harness,36,3,5,2.528,0.3963,ev_0022,open a regression issue with trace and benchmark delta
+spells boundary probe,36,3,4,2.528,0.3881,ev_0077,route to reviewer with evidence packet
+surebright evidence replay,36,4,5,2.611,0.4171,ev_0088,block release until cited evidence is regenerated

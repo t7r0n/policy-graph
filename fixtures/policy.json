@@ -13,6 +13,28 @@
     "painful_misroute",
     "lowest_blindspot"
   ],
+  "domain_archetypes": [
+    {
+      "name": "surebright evidence replay",
+      "trigger": "surebright signal changes while spells context is stale",
+      "expected": "block release until cited evidence is regenerated"
+    },
+    {
+      "name": "spells boundary probe",
+      "trigger": "spells handoff crosses a policy or trust boundary",
+      "expected": "route to reviewer with evidence packet"
+    },
+    {
+      "name": "painful regression harness",
+      "trigger": "painful behavior regresses against the last accepted fixture",
+      "expected": "open a regression issue with trace and benchmark delta"
+    },
+    {
+      "name": "lowest operator packet",
+      "trigger": "lowest output needs a human-readable audit packet",
+      "expected": "accept only if decision claims cite fixture evidence"
+    }
+  ],
   "minimum_cases": 144,
   "requires_evidence_markers": true
 }
