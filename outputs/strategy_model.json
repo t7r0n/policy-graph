@@ -1,0 +1,69 @@
+{
+  "company": "SureBright",
+  "repo": "policy-graph",
+  "terms": [
+    "surebright",
+    "spells",
+    "painful",
+    "lowest",
+    "leverage",
+    "roadmap",
+    "warranty",
+    "parsing"
+  ],
+  "metrics": [
+    "surebright_coverage",
+    "spells_risk",
+    "painful_precision",
+    "lowest_latency"
+  ],
+  "failure_modes": [
+    "surebright_drift",
+    "spells_gap",
+    "painful_misroute",
+    "lowest_blindspot"
+  ],
+  "evidence_density": 17.75,
+  "pressure_index": 0.3167,
+  "blocked_share": 0.0972,
+  "review_share": 0.1319,
+  "top_leverage_points": [
+    {
+      "rank": 1,
+      "scenario": "surebright evidence replay",
+      "metric": "surebright_coverage",
+      "failure_mode": "surebright_drift",
+      "evidence": "ev_0088",
+      "operator_action": "block release until cited evidence is regenerated",
+      "severity": 2.611
+    },
+    {
+      "rank": 2,
+      "scenario": "lowest operator packet",
+      "metric": "spells_risk",
+      "failure_mode": "spells_gap",
+      "evidence": "ev_0099",
+      "operator_action": "accept only if decision claims cite fixture evidence",
+      "severity": 2.556
+    },
+    {
+      "rank": 3,
+      "scenario": "painful regression harness",
+      "metric": "painful_precision",
+      "failure_mode": "painful_misroute",
+      "evidence": "ev_0022",
+      "operator_action": "open a regression issue with trace and benchmark delta",
+      "severity": 2.528
+    },
+    {
+      "rank": 4,
+      "scenario": "spells boundary probe",
+      "metric": "lowest_latency",
+      "failure_mode": "lowest_blindspot",
+      "evidence": "ev_0077",
+      "operator_action": "route to reviewer with evidence packet",
+      "severity": 2.528
+    }
+  ],
+  "readout": "SureBright gets a local, deterministic pressure test around surebright, spells, and painful. The useful part is not the dashboard; it is the repeatable evidence path from fixture to failure to operator action."
+}

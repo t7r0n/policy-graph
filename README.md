@@ -2,19 +2,39 @@
 
 A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG - with every clause traceable to a span in the source.
 
-## Why This Exists
+![Policy Graph working dashboard](outputs/project_working.svg)
 
-SureBright's own JD spells out the most painful, lowest leverage line item on their roadmap: OEM warranty parsing - "converting manufacturer policies into machine readable coverage logic." Today every new merchant onboarding requires a human (or a one shot LLM call) to read each OEM's policy PDF (Whirlpool, Bosch, DJI, Peloton, Therabody...), decide what's covered vs.
+## Why it exists
 
-## What It Builds
+SureBright's own JD spells out the most painful, lowest leverage line item on their roadmap: OEM warranty parsing - "converting manufacturer policies into machine readable coverage logic." Today every new merchant onboarding requires a human (or a one shot LLM call) to read each OEM's policy PDF (Whirlpool, Bosch, DJI, Peloton, Therabody...), decide what's c
 
-- Replays synthetic `surebright` and `spells` cases against the project's evidence rules.
-- Scores `surebright_coverage`, `spells_risk`, and `painful_precision` so regressions are visible in CSV and JSON.
-- Plants `surebright drift` and `spells gap` failures as negative controls.
-- Writes citation-locked decision claims; unsupported claims fail verification.
-- Exports a review dashboard and demo pack for `policy-graph` without hosted services.
+Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
 
-## Local Run
+## What is inside
+
+- A deterministic replay harness tuned around surebright, spells, and painful.
+- Company-specific strategy code in `src/policy_graph/strategy.py`, not just README-level customization.
+- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
+- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+
+![Policy Graph evidence map](outputs/evidence_map.svg)
+
+## Signals it measures
+
+- `surebright coverage`
+- `spells risk`
+- `painful precision`
+- `lowest latency`
+
+## Failure modes it plants
+
+- surebright drift
+- spells gap
+- painful misroute
+- lowest blindspot
+
+## Run it locally
 
 ```bash
 uv sync
@@ -23,16 +43,14 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Outputs worth opening
 
-- `outputs/analysis.json`
-- `outputs/scenario_report.csv`
-- `outputs/decision_report.md`
-- `outputs/evidence_packet.md`
-- `outputs/domain_rubric.json`
-- `outputs/failure_matrix.md`
-- `outputs/trace_graph.mmd`
 - `outputs/dashboard.html`
+- `outputs/project_working.svg`
+- `outputs/evidence_map.svg`
+- `outputs/operator_brief.md`
+- `outputs/decision_report.md`
+- `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
 
 ## Sources
@@ -48,4 +66,4 @@ uv run ruff check .
 
 ## Boundary
 
-This repository uses synthetic fixtures only. It has no credentials, no customer data, no outreach data, and no dependency on a hosted API.
+Everything runs locally against synthetic fixtures. There are no credentials, no customer records, no outreach files, and no hosted API dependency.
