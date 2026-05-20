@@ -1,76 +1,61 @@
 {
-  "company": "SureBright",
-  "company_slug": "surebright",
+  "company": "Policy Graph",
+  "company_slug": "policy-graph",
   "repo": "policy-graph",
   "package": "policy_graph",
   "cli": "policy-graph",
   "title": "Policy Graph",
-  "problem": "SureBright's own JD spells out the most painful, lowest leverage line item on their roadmap: OEM warranty parsing \u2014 \"converting manufacturer policies into machine readable coverage logic.\" Today every new merchant onboarding requires a human (or a one shot LLM call) to read each OEM's policy PDF (Whirlpool, Bosch, DJI, Peloton, Therabody...), decide what's covered vs.",
-  "direction": "A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG \u2014 with every clause traceable to a span in the source.",
-  "why": "Anyone can wrap GPT in a Pydantic schema. Making the LLM substring prove every extracted value turns a generation problem into an extraction problem and is exactly the kind of thing a Waterloo low latency systems person recognizes as a serious engineering invariant.",
+  "problem": "Policy Graph's own JD spells out the most painful, lowest leverage line item on their roadmap: OEM warranty parsing - \"converting manufacturer policies into machine readable coverage logic.\" Today every new merchant onboarding requires a human (or a one shot LLM call) to read each OEM's policy PDF (Whirlpool, Bosch, DJI, Peloton, Therabody...), decide what's covered vs.",
+  "direction": "A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG - with every clause traceable to a span in the source.",
+  "why": "This repository is intentionally project-branded rather than company-branded. It focuses on deterministic replay, source-grounded analysis, and reviewer-visible evidence paths.",
   "terms": [
-    "surebright",
-    "spells",
-    "painful",
-    "lowest",
-    "leverage",
-    "roadmap",
-    "warranty",
-    "parsing",
-    "converting",
-    "manufacturer",
-    "policies",
-    "machine",
-    "readable",
+    "evidence",
+    "workflow",
+    "review",
+    "claims",
+    "fixtures",
+    "replay",
+    "handoff",
+    "trace",
+    "policy",
+    "decision",
     "coverage",
-    "logic",
-    "today",
-    "merchant",
-    "onboarding"
+    "latency"
   ],
   "metrics": [
-    "surebright_coverage",
-    "spells_risk",
-    "painful_precision",
-    "lowest_latency"
+    "evidence_coverage",
+    "handoff_risk",
+    "claim_precision",
+    "review_latency"
   ],
   "failure_modes": [
-    "surebright_drift",
-    "spells_gap",
-    "painful_misroute",
-    "lowest_blindspot"
+    "evidence_drift",
+    "handoff_gap",
+    "claim_misroute",
+    "review_blindspot"
   ],
   "archetypes": [
     {
-      "name": "surebright evidence replay",
-      "trigger": "surebright signal changes while spells context is stale",
+      "name": "evidence replay",
+      "trigger": "source evidence changes while workflow context is stale",
       "expected": "block release until cited evidence is regenerated"
     },
     {
-      "name": "spells boundary probe",
-      "trigger": "spells handoff crosses a policy or trust boundary",
+      "name": "handoff boundary probe",
+      "trigger": "handoff crosses a policy or trust boundary",
       "expected": "route to reviewer with evidence packet"
     },
     {
-      "name": "painful regression harness",
-      "trigger": "painful behavior regresses against the last accepted fixture",
+      "name": "claim regression harness",
+      "trigger": "claim behavior regresses against the last accepted fixture",
       "expected": "open a regression issue with trace and benchmark delta"
     },
     {
-      "name": "lowest operator packet",
-      "trigger": "lowest output needs a human-readable audit packet",
+      "name": "review operator packet",
+      "trigger": "review output needs a human-readable audit packet",
       "expected": "accept only if decision claims cite fixture evidence"
     }
   ],
-  "sources": [
-    "https://www.ycombinator.com/companies/surebright",
-    "https://www.ycombinator.com/companies/surebright/jobs/HLJI44H-staff-ai-engineer-agentic-systems",
-    "https://betakit.com/surebright-raises-3-2-million-cad-to-reinvent-retail-insurance/",
-    "https://www.insurancebusinessmag.com/ca/news/technology/insurtech-surebright-secures-3-2-million-preseed-round-418620.aspx",
-    "https://getlatka.com/companies/surebright.com",
-    "https://theorg.com/org/surebright/org-chart/manish-chauhan",
-    "https://nocap.blog/experience/surebright/",
-    "https://www.surebright.com/faq/surebright-integration-process"
-  ],
+  "sources": [],
   "github_url": "https://github.com/t7r0n/policy-graph"
 }

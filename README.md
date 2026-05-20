@@ -6,7 +6,7 @@ A typed, auditable OEM warranty parser that turns any manufacturer policy PDF in
 
 ## Why it exists
 
-SureBright's own JD spells out the most painful, lowest leverage line item on their roadmap: OEM warranty parsing — "converting manufacturer policies into machine readable coverage logic." Today every new merchant onboarding requires a human (or a one shot LLM call) to read each OEM's policy PDF (Whirlpool, Bosch, DJI, Peloton, Therabody...), decide.
+Policy Graph's own JD spells out the most painful, lowest leverage line item on their roadmap: OEM warranty parsing — "converting manufacturer policies into machine readable coverage logic." Today every new merchant onboarding requires a human (or a one shot LLM call) to read each OEM's policy PDF (Whirlpool, Bosch, DJI, Peloton, Therabody...), decide.
 
 The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
@@ -22,14 +22,14 @@ The project is intentionally built as a local replay harness instead of a slide.
 
 ## Signals it measures
 
-- `surebright coverage`
+- `Policy Graph coverage`
 - `spells risk`
 - `painful precision`
 - `lowest latency`
 
 ## Failure modes it plants
 
-- surebright drift
+- Policy Graph drift
 - spells gap
 - painful misroute
 - lowest blindspot
@@ -52,17 +52,6 @@ uv run ruff check .
 - `outputs/decision_report.md`
 - `outputs/strategy_model.json`
 - `outputs/demo_pack.zip`
-
-## Sources
-
-- https://www.ycombinator.com/companies/surebright
-- https://www.ycombinator.com/companies/surebright/jobs/HLJI44H-staff-ai-engineer-agentic-systems
-- https://betakit.com/surebright-raises-3-2-million-cad-to-reinvent-retail-insurance/
-- https://www.insurancebusinessmag.com/ca/news/technology/insurtech-surebright-secures-3-2-million-preseed-round-418620.aspx
-- https://getlatka.com/companies/surebright.com
-- https://theorg.com/org/surebright/org-chart/manish-chauhan
-- https://nocap.blog/experience/surebright/
-- https://www.surebright.com/faq/surebright-integration-process
 
 ## Boundary
 

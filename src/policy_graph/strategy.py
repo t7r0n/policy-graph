@@ -6,15 +6,15 @@ from pathlib import Path
 from typing import Any
 
 
-COMPANY = 'SureBright'
+COMPANY = 'Policy Graph'
 REPO = 'policy-graph'
-PROJECT_TERMS = ['surebright', 'spells', 'painful', 'lowest', 'leverage', 'roadmap', 'warranty', 'parsing']
-PROJECT_METRICS = ['surebright_coverage', 'spells_risk', 'painful_precision', 'lowest_latency']
-PROJECT_FAILURES = ['surebright_drift', 'spells_gap', 'painful_misroute', 'lowest_blindspot']
-PROJECT_ARCHETYPES = [{'name': 'surebright evidence replay', 'trigger': 'surebright signal changes while spells context is stale', 'expected': 'block release until cited evidence is regenerated'}, {'name': 'spells boundary probe', 'trigger': 'spells handoff crosses a policy or trust boundary', 'expected': 'route to reviewer with evidence packet'}, {'name': 'painful regression harness', 'trigger': 'painful behavior regresses against the last accepted fixture', 'expected': 'open a regression issue with trace and benchmark delta'}, {'name': 'lowest operator packet', 'trigger': 'lowest output needs a human-readable audit packet', 'expected': 'accept only if decision claims cite fixture evidence'}]
-PROJECT_DIRECTION = 'A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG — with every clause traceable to a span in the source.'
+PROJECT_TERMS = ['evidence', 'workflow', 'review', 'claims', 'fixtures', 'replay', 'handoff', 'trace', 'policy', 'decision', 'coverage', 'latency']
+PROJECT_METRICS = ['evidence_coverage', 'handoff_risk', 'claim_precision', 'review_latency']
+PROJECT_FAILURES = ['evidence_drift', 'handoff_gap', 'claim_misroute', 'review_blindspot']
+PROJECT_ARCHETYPES = [{'name': 'evidence replay', 'trigger': 'source evidence changes while workflow context is stale', 'expected': 'block release until cited evidence is regenerated'}, {'name': 'handoff boundary probe', 'trigger': 'handoff crosses a policy or trust boundary', 'expected': 'route to reviewer with evidence packet'}, {'name': 'claim regression harness', 'trigger': 'claim behavior regresses against the last accepted fixture', 'expected': 'open a regression issue with trace and benchmark delta'}, {'name': 'review operator packet', 'trigger': 'review output needs a human-readable audit packet', 'expected': 'accept only if decision claims cite fixture evidence'}]
+PROJECT_DIRECTION = 'A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG - with every clause traceable to a span in the source.'
 VISUAL_THEME = {'name': 'agent security', 'bg': '#f7f8fb', 'ink': '#111827', 'muted': '#475569', 'border': '#d8e1ec', 'a': '#2563eb', 'b': '#0891b2', 'c': '#7c3aed', 'd': '#dc2626', 'soft_a': '#eff6ff', 'soft_b': '#ecfeff', 'soft_c': '#f5f3ff', 'soft_d': '#fef2f2', 'hero': 'Adversarial Replay Board', 'left': 'runtime probes with evidence', 'right': 'release gates under attack', 'chain': 'attack-to-action chain', 'lane': 'probe', 'gate': 'guard failure', 'action': 'release action'}
-HERO_TITLE = 'SureBright Adversarial Replay Board'
+HERO_TITLE = 'Policy Graph'
 
 
 def _short(value: str, limit: int = 44) -> str:
@@ -107,7 +107,7 @@ def build_signal_model(rows: list[dict[str, Any]], clusters: list[dict[str, Any]
         "review_share": round(review / total, 4),
         "top_leverage_points": leverage,
         "readout": (
-            f"{COMPANY} gets a local, deterministic pressure test around "
+            "This local harness runs a deterministic pressure test around "
             f"{PROJECT_TERMS[0]}, {PROJECT_TERMS[1]}, and {PROJECT_TERMS[2]}. "
             "The useful part is the repeatable evidence path from fixture "
             "to failure to operator action."

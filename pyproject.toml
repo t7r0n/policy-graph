@@ -1,7 +1,7 @@
 [project]
 name = "policy-graph"
 version = "0.1.0"
-description = "A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG - with every clause trac"
+description = "A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG - wi"
 readme = "README.md"
 requires-python = ">=3.12"
 authors = [
