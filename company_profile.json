@@ -5,8 +5,8 @@
   "package": "policy_graph",
   "cli": "policy-graph",
   "title": "Policy Graph",
-  "problem": "SureBright's own JD spells out the most painful, lowest leverage line item on their roadmap: OEM warranty parsing - \"converting manufacturer policies into machine readable coverage logic.\" Today every new merchant onboarding requires a human (or a one shot LLM call) to read each OEM's policy PDF (Whirlpool, Bosch, DJI, Peloton, Therabody...), decide what's covered vs.",
-  "direction": "A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG - with every clause traceable to a span in the source.",
+  "problem": "SureBright's own JD spells out the most painful, lowest leverage line item on their roadmap: OEM warranty parsing \u2014 \"converting manufacturer policies into machine readable coverage logic.\" Today every new merchant onboarding requires a human (or a one shot LLM call) to read each OEM's policy PDF (Whirlpool, Bosch, DJI, Peloton, Therabody...), decide what's covered vs.",
+  "direction": "A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG \u2014 with every clause traceable to a span in the source.",
   "why": "Anyone can wrap GPT in a Pydantic schema. Making the LLM substring prove every extracted value turns a generation problem into an extraction problem and is exactly the kind of thing a Waterloo low latency systems person recognizes as a serious engineering invariant.",
   "terms": [
     "surebright",

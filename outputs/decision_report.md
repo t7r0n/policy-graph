@@ -1,6 +1,6 @@
 # Decision Report: Policy Graph
 
-A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG - with every clause traceable to a span in the source.
+A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG — with every clause traceable to a span in the source.
 
 ## Evidence-Grounded Findings
 

@@ -1,22 +1,22 @@
 # Policy Graph
 
-A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG - with every clause traceable to a span in the source.
+A typed, auditable OEM warranty parser that turns any manufacturer policy PDF into a machine checkable coverage DAG — with every clause traceable to a span in the source.
 
 ![Policy Graph working dashboard](outputs/project_working.svg)
 
 ## Why it exists
 
-SureBright's own JD spells out the most painful, lowest leverage line item on their roadmap: OEM warranty parsing - "converting manufacturer policies into machine readable coverage logic." Today every new merchant onboarding requires a human (or a one shot LLM call) to read each OEM's policy PDF (Whirlpool, Bosch, DJI, Peloton, Therabody...), decide what's c
+SureBright's own JD spells out the most painful, lowest leverage line item on their roadmap: OEM warranty parsing — "converting manufacturer policies into machine readable coverage logic." Today every new merchant onboarding requires a human (or a one shot LLM call) to read each OEM's policy PDF (Whirlpool, Bosch, DJI, Peloton, Therabody...), decide.
 
-Most internal demos stop at a pretty chart. This repository is built around the harder part: a repeatable path from fixture, to failure, to evidence, to the operator action a serious team would actually trust.
+The project is intentionally built as a local replay harness instead of a slide. It creates fixtures, plants realistic failure modes, produces citation-locked evidence, and turns the result into a dashboard a reviewer can inspect without credentials or hosted services.
 
 ## What is inside
 
-- A deterministic replay harness tuned around surebright, spells, and painful.
-- Company-specific strategy code in `src/policy_graph/strategy.py`, not just README-level customization.
-- Citation-locked reports where every decision claim has to point back to a generated evidence ID.
-- Two visual artifacts generated from the latest run: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
-- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, and benchmark artifacts.
+- Deterministic fixture generation for the company-specific risk surface.
+- Strategy code in `src/policy_graph/strategy.py` with project-specific scoring and visual evidence.
+- Citation-locked reports where every decision claim points to a generated evidence ID.
+- Two regenerated visual artifacts: `outputs/project_working.svg` and `outputs/evidence_map.svg`.
+- A portable demo pack with JSON, CSV, Markdown, HTML, SVG, benchmark, and test artifacts.
 
 ![Policy Graph evidence map](outputs/evidence_map.svg)
 
